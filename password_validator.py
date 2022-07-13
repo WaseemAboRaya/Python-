@@ -1,3 +1,4 @@
+import sys
 import colorama
 colorama.init(autoreset=True)
 def printresult(s: str) -> bool:
