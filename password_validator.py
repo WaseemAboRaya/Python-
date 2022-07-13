@@ -34,7 +34,10 @@ try:
             for x in f.readlines():
                 print("the pass in file is :",x)
                 r1 = printresult(x)
-                print(r1)
+                if r1==0:
+                    print(colorama.Fore.GREEN+"0")
+                else:print(colorama.Fore.RED+"1")
+
     elif x == "-f":
         try:
             y = sys.argv[2]
